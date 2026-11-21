@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | CAR VAULT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">CAR<span>✦</span>VAULT</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html" class="active">CONTACT</a>
+      <a href="faq.html">HELP & FAQ</a>
+    </nav>
+    <a class="button" href="index.html#test-drive">BOOK A TEST DRIVE ↗</a>
+  </header>
+
+  <section class="hero contact-hero">
+    <p class="gold-text">CAR VAULT / GET IN TOUCH</p>
+    <h1>LET'S START<br><span>A CONVERSATION.</span></h1>
+    <p>Have a question or found a car you love? Our team is ready to help.</p>
+  </section>
+
+  <section class="section contact-layout">
+    <div>
+      <p class="gold-text">WE WOULD LOVE TO HEAR FROM YOU</p>
+      <h2>CONNECT<br><span>WITH CAR VAULT.</span></h2>
+      <p>Reach out to ask about our cars, arrange a visit or get help from our team.</p>
+
+      <div class="contact-detail"><h3>VISIT OUR SHOWROOM</h3><p>Islamabad, Pakistan</p></div>
+      <div class="contact-detail"><h3>CALL OUR TEAM</h3><p>+92 300 1234567</p></div>
+      <div class="contact-detail"><h3>EMAIL US</h3><p>info@carvault.example</p></div>
+      <div class="contact-detail"><h3>SHOWROOM HOURS</h3><p>Monday – Saturday · 10:00 AM – 8:00 PM</p></div>
+    </div>
+
+    <form id="contactForm" class="form-box">
+      <p class="gold-text">SEND US A MESSAGE</p>
+      <h2>HOW CAN WE HELP?</h2>
+
+      <label>Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label>Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" placeholder="+92 3XX XXXXXXX">
+
+      <label>Subject</label>
+      <select id="subject" required>
+        <option value="">Select a subject</option>
+        <option>Vehicle enquiry</option>
+        <option>Book a test drive</option>
+        <option>Showroom visit</option>
+        <option>General question</option>
+      </select>
+
+      <label>Your Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button class="button" type="submit">SEND MESSAGE ↗</button>
+      <p id="formMessage" class="message"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="logo">CAR<span>✦</span>VAULT</div>
+    <p>THE ART OF AUTOMOTIVE EXCELLENCE · ISLAMABAD, PAKISTAN</p>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="faq.html">HELP & FAQ</a>
+    <p class="copyright">© 2026 CAR VAULT. ALL RIGHTS RESERVED.</p>
+  </footer>
+</body>
+</html>
