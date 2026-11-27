@@ -33,12 +33,12 @@ body {
 /* Header, Navigation & Buttons */
 header {
   background-color: rgba(8, 8, 10, 0.96);
-  padding: 22px 5%;
+  padding: 18px 2.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-wrap: nowrap;
+  gap: 12px;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -47,10 +47,12 @@ header {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: var(--text);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .logo span,
@@ -62,18 +64,19 @@ h2 span {
 header nav {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-wrap: nowrap;
+  gap: 13px;
 }
 
 nav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10.5px;
   font-weight: 600;
-  letter-spacing: 1.8px;
+  letter-spacing: 1px;
   padding: 6px 0;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
   transition: color 0.25s ease, border-color 0.25s ease;
 }
 
@@ -83,23 +86,28 @@ nav a.active {
   border-bottom-color: var(--gold);
 }
 
-.button {
+.button,
+header .button {
   display: inline-block;
-  background-color: var(--gold);
+  background-color: #d4af37;
   color: #08080a;
-  border: 1px solid var(--gold);
-  padding: 13px 24px;
+  border: 1px solid #d4af37;
+  padding: 11px 16px;
   text-decoration: none;
   font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 1.5px;
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  white-space: nowrap;
+  flex-shrink: 0;
   cursor: pointer;
   transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.button:hover {
-  background-color: var(--gold-light);
-  border-color: var(--gold-light);
+.button:hover,
+header .button:hover {
+  background-color: #ecd078;
+  border-color: #ecd078;
+  color: #08080a;
   transform: translateY(-2px);
   box-shadow: 0 8px 22px rgba(212, 175, 55, 0.22);
 }
@@ -360,51 +368,83 @@ textarea:focus {
 
 /* Footer */
 footer {
-  background-color: #050507;
-  text-align: center;
-  padding: 48px 5% 36px;
+  background-color: #0b0c0e;
+  padding: 64px 5% 28px;
   border-top: 1px solid var(--border);
+  text-align: left;
 }
 
-footer .logo {
-  margin-bottom: 10px;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.6fr;
+  gap: 60px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border);
 }
 
-footer p {
+.footer-brand .logo {
+  margin-bottom: 18px;
+}
+
+.footer-desc {
   color: var(--muted);
-  margin: 10px 0;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 340px;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
 }
 
-footer nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 22px;
-  margin: 20px 0 12px;
-}
-
-footer a {
+.footer-tagline {
   color: var(--gold);
-  text-decoration: none;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  border-bottom: 1px solid transparent;
-  padding: 4px 0;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
 }
 
-footer a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold-light);
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 
-footer .copyright {
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.footer-col a {
+  display: block;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 12px;
+  transition: color 0.25s ease;
+}
+
+.footer-col a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 22px;
+}
+
+footer .copyright,
+.footer-right-note {
   color: var(--subtle);
   font-size: 11px;
-  letter-spacing: 1.5px;
-  margin-top: 22px;
+  letter-spacing: 1.8px;
+  margin: 0;
 }
 
 /* Responsive Layout */
