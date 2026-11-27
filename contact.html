@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — CAR VAULT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">CAR<span>✦</span>VAULT</div>
+    <nav aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="cars.html">EXPLORE CARS</a>
+      <a href="brands.html">BRANDS</a>
+      <a href="new-arrivals.html">NEW ARRIVALS</a>
+      <a href="offers.html">OFFERS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html" class="active">CONTACT</a>
+      <a href="compare.html">COMPARE</a>
+      <a href="finance.html">FINANCE</a>
+      <a href="test-drive.html">TEST DRIVE</a>
+      <a href="saved.html">SAVED CARS</a>
+      <a href="admin.html">ADMIN</a>
+    </nav>
+    <a class="button" href="test-drive.html">BOOK A TEST DRIVE ↗</a>
+  </header>
+
+  <main>
+    <section class="hero contact-hero">
+      <p class="gold-text">CAR VAULT / GET IN TOUCH</p>
+      <h1>LET'S START<br><span>A CONVERSATION.</span></h1>
+      <p>Have a question or found a car you love? Our team is ready to help.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div>
+        <p class="gold-text">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h2>CONNECT<br><span>WITH CAR VAULT.</span></h2>
+        <p>Reach out to ask about our cars, arrange a visit or get help from our team.</p>
+
+        <div class="contact-detail"><h3>VISIT OUR SHOWROOM</h3><p>Islamabad, Pakistan</p></div>
+        <div class="contact-detail"><h3>CALL OUR TEAM</h3><p>+92 300 1234567</p></div>
+        <div class="contact-detail"><h3>EMAIL US</h3><p>info@carvault.example</p></div>
+        <div class="contact-detail"><h3>SHOWROOM HOURS</h3><p>Monday – Saturday · 10:00 AM – 8:00 PM</p></div>
+      </div>
+
+      <form id="contactForm" class="form-box">
+        <p class="gold-text">SEND US A MESSAGE</p>
+        <h2>HOW CAN WE HELP?</h2>
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+92 3XX XXXXXXX">
+
+        <label for="subject">Subject</label>
+        <select id="subject" required>
+          <option value="">Select a subject</option>
+          <option>Vehicle enquiry</option>
+          <option>Book a test drive</option>
+          <option>Showroom visit</option>
+          <option>General question</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button class="button" type="submit">SEND MESSAGE ↗</button>
+        <p id="formMessage" class="message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">CAR<span>✦</span>VAULT</div>
+        <p class="footer-desc">An elevated way to discover, compare and experience the world's most extraordinary automobiles.</p>
+        <p class="footer-tagline">DRIVE THE EXTRAORDINARY.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Discover</h4>
+          <a href="cars.html">Our Collection</a>
+          <a href="brands.html">Our Brands</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="offers.html">Special Offers</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="compare.html">Compare Cars</a>
+          <a href="finance.html">Finance</a>
+          <a href="test-drive.html">Test Drive</a>
+          <a href="saved.html">Wishlist</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">Help &amp; FAQ</a>
+          <a href="admin.html">Admin Portal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 CAR VAULT. ALL RIGHTS RESERVED.</p>
+      <p class="footer-right-note">CRAFTED FOR THE EXTRAORDINARY</p>
+    </div>
+  </footer>
+</body>
+</html>
